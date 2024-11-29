@@ -64,10 +64,15 @@ public:
         PB_AddNewAuto->setGeometry(QRect(192, 254, 109, 54));
         DE_ProductionDate = new QDateEdit(CreateAutoWindow);
         DE_ProductionDate->setObjectName("DE_ProductionDate");
-        DE_ProductionDate->setGeometry(QRect(138, 190, 162, 23));
+        DE_ProductionDate->setGeometry(QRect(156, 190, 144, 23));
         LB_Mode = new QLabel(CreateAutoWindow);
         LB_Mode->setObjectName("LB_Mode");
-        LB_Mode->setGeometry(QRect(14, 9, 164, 16));
+        LB_Mode->setGeometry(QRect(14, 9, 298, 16));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(LB_Mode->sizePolicy().hasHeightForWidth());
+        LB_Mode->setSizePolicy(sizePolicy);
         CB_AutoMark = new QComboBox(CreateAutoWindow);
         CB_AutoMark->addItem(QString());
         CB_AutoMark->addItem(QString());
@@ -89,7 +94,7 @@ public:
         CB_AutoCategory->setGeometry(QRect(84, 106, 209, 22));
         label_4 = new QLabel(CreateAutoWindow);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(9, 191, 130, 16));
+        label_4->setGeometry(QRect(9, 191, 142, 16));
         PB_AddNewAutoMark = new QPushButton(CreateAutoWindow);
         PB_AddNewAutoMark->setObjectName("PB_AddNewAutoMark");
         PB_AddNewAutoMark->setGeometry(QRect(261, 47, 32, 18));

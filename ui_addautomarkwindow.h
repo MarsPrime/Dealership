@@ -46,7 +46,12 @@ public:
         LE_FacilityAddress->setMaxLength(64);
         label = new QLabel(addAutoMarkWindow);
         label->setObjectName("label");
-        label->setGeometry(QRect(13, 27, 194, 16));
+        label->setGeometry(QRect(13, 27, 274, 16));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy);
         LE_Facility = new QLineEdit(addAutoMarkWindow);
         LE_Facility->setObjectName("LE_Facility");
         LE_Facility->setGeometry(QRect(115, 81, 262, 22));
@@ -63,7 +68,9 @@ public:
         PB_Cancel->setGeometry(QRect(177, 185, 101, 62));
         label_4 = new QLabel(addAutoMarkWindow);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(15, 112, 134, 16));
+        label_4->setGeometry(QRect(15, 112, 155, 16));
+        sizePolicy.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
+        label_4->setSizePolicy(sizePolicy);
         PB_AddAutoMark = new QPushButton(addAutoMarkWindow);
         PB_AddAutoMark->setObjectName("PB_AddAutoMark");
         PB_AddAutoMark->setGeometry(QRect(285, 187, 101, 62));

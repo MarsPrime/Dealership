@@ -54,7 +54,12 @@ public:
         LB_Employee->setGeometry(QRect(81, 58, 198, 16));
         LB_Header = new QLabel(newOrderWindow);
         LB_Header->setObjectName("LB_Header");
-        LB_Header->setGeometry(QRect(12, 21, 274, 16));
+        LB_Header->setGeometry(QRect(12, 21, 322, 16));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(LB_Header->sizePolicy().hasHeightForWidth());
+        LB_Header->setSizePolicy(sizePolicy);
         PB_Cancel = new QPushButton(newOrderWindow);
         PB_Cancel->setObjectName("PB_Cancel");
         PB_Cancel->setGeometry(QRect(262, 139, 98, 69));
@@ -65,7 +70,7 @@ public:
         CB_Auto = new QComboBox(newOrderWindow);
         CB_Auto->addItem(QString());
         CB_Auto->setObjectName("CB_Auto");
-        CB_Auto->setGeometry(QRect(92, 107, 320, 22));
+        CB_Auto->setGeometry(QRect(101, 107, 311, 22));
         PB_AddNewClient = new QPushButton(newOrderWindow);
         PB_AddNewClient->setObjectName("PB_AddNewClient");
         PB_AddNewClient->setGeometry(QRect(426, 82, 31, 22));

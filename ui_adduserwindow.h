@@ -75,7 +75,7 @@ public:
         label_7->setGeometry(QRect(18, 229, 61, 16));
         label_8 = new QLabel(addUserWindow);
         label_8->setObjectName("label_8");
-        label_8->setGeometry(QRect(20, 54, 57, 14));
+        label_8->setGeometry(QRect(20, 54, 64, 16));
         LE_PassportSerial = new QLineEdit(addUserWindow);
         LE_PassportSerial->setObjectName("LE_PassportSerial");
         LE_PassportSerial->setGeometry(QRect(200, 228, 104, 22));
@@ -109,7 +109,7 @@ public:
         PB_Cancel->setGeometry(QRect(99, 430, 99, 39));
         label_17 = new QLabel(addUserWindow);
         label_17->setObjectName("label_17");
-        label_17->setGeometry(QRect(18, 198, 136, 16));
+        label_17->setGeometry(QRect(18, 198, 156, 16));
         LE_Login = new QLineEdit(addUserWindow);
         LE_Login->setObjectName("LE_Login");
         LE_Login->setGeometry(QRect(13, 388, 113, 22));
@@ -143,7 +143,7 @@ public:
         LE_Address->setMaxLength(128);
         DSB_Salary = new QDoubleSpinBox(addUserWindow);
         DSB_Salary->setObjectName("DSB_Salary");
-        DSB_Salary->setGeometry(QRect(84, 338, 212, 23));
+        DSB_Salary->setGeometry(QRect(99, 338, 197, 23));
         DSB_Salary->setMaximum(1000000.000000000000000);
         DSB_Salary->setSingleStep(10000.000000000000000);
 

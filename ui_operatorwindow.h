@@ -79,7 +79,7 @@ public:
         tab->setObjectName("tab");
         CB_Color = new QComboBox(tab);
         CB_Color->setObjectName("CB_Color");
-        CB_Color->setGeometry(QRect(144, 41, 192, 22));
+        CB_Color->setGeometry(QRect(152, 41, 192, 22));
         LE_SearchAuto = new QLineEdit(tab);
         LE_SearchAuto->setObjectName("LE_SearchAuto");
         LE_SearchAuto->setGeometry(QRect(138, 11, 408, 22));
@@ -90,7 +90,7 @@ public:
         CB_AutoSearchFilter->setGeometry(QRect(4, 11, 125, 22));
         DE_ProductionDate = new QDateEdit(tab);
         DE_ProductionDate->setObjectName("DE_ProductionDate");
-        DE_ProductionDate->setGeometry(QRect(690, 40, 94, 23));
+        DE_ProductionDate->setGeometry(QRect(688, 40, 100, 23));
         TW_AutoList = new QTableWidget(tab);
         if (TW_AutoList->columnCount() < 6)
             TW_AutoList->setColumnCount(6);
@@ -142,16 +142,16 @@ public:
         TW_AutoList->verticalHeader()->setHighlightSections(false);
         label = new QLabel(tab);
         label->setObjectName("label");
-        label->setGeometry(QRect(112, 45, 57, 14));
+        label->setGeometry(QRect(118, 45, 57, 14));
         label_2 = new QLabel(tab);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(9, 44, 104, 16));
         CB_Category = new QComboBox(tab);
         CB_Category->setObjectName("CB_Category");
-        CB_Category->setGeometry(QRect(420, 40, 199, 22));
+        CB_Category->setGeometry(QRect(424, 40, 187, 22));
         label_3 = new QLabel(tab);
         label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(346, 45, 70, 16));
+        label_3->setGeometry(QRect(350, 44, 75, 16));
         CHKB_DateFilter = new QCheckBox(tab);
         CHKB_DateFilter->setObjectName("CHKB_DateFilter");
         CHKB_DateFilter->setGeometry(QRect(628, 41, 99, 20));
@@ -165,7 +165,7 @@ public:
         CB_SortParameter->addItem(QString());
         CB_SortParameter->addItem(QString());
         CB_SortParameter->setObjectName("CB_SortParameter");
-        CB_SortParameter->setGeometry(QRect(654, 11, 131, 22));
+        CB_SortParameter->setGeometry(QRect(660, 11, 125, 22));
         RB_SortASC = new QRadioButton(tab);
         RB_SortASC->setObjectName("RB_SortASC");
         RB_SortASC->setGeometry(QRect(792, 12, 126, 20));
@@ -236,13 +236,13 @@ public:
         CB_EmployeeSort->addItem(QString());
         CB_EmployeeSort->addItem(QString());
         CB_EmployeeSort->setObjectName("CB_EmployeeSort");
-        CB_EmployeeSort->setGeometry(QRect(710, 8, 222, 22));
+        CB_EmployeeSort->setGeometry(QRect(724, 8, 208, 22));
         label_5 = new QLabel(tab_2);
         label_5->setObjectName("label_5");
         label_5->setGeometry(QRect(609, 12, 130, 16));
         label_6 = new QLabel(tab_2);
         label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(9, 46, 181, 16));
+        label_6->setGeometry(QRect(9, 46, 188, 16));
         CB_PostFilter = new QComboBox(tab_2);
         CB_PostFilter->setObjectName("CB_PostFilter");
         CB_PostFilter->setGeometry(QRect(201, 42, 223, 22));
@@ -294,7 +294,7 @@ public:
         OperatorWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(OperatorWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 952, 19));
+        menubar->setGeometry(QRect(0, 0, 952, 21));
         MENU_Add = new QMenu(menubar);
         MENU_Add->setObjectName("MENU_Add");
         MENU_Edit = new QMenu(menubar);
